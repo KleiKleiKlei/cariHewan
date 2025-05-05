@@ -1,65 +1,143 @@
-<<<<<<< HEAD
-# CodeIgniter 4 Framework
+# 🐾 CariHewan
 
-## What is CodeIgniter?
+CariHewan adalah aplikasi web yang dibangun dengan CodeIgniter 4 untuk membantu mempertemukan kembali hewan peliharaan yang hilang dengan pemiliknya. Platform ini memungkinkan pengguna untuk melaporkan hewan yang hilang dan hewan yang ditemukan, memudahkan pemilik hewan untuk menemukan hewan kesayangan mereka yang hilang.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## 🌟 Fitur Utama
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- **Laporan Hewan Hilang**: Pengguna dapat membuat laporan detail tentang hewan yang hilang termasuk:
+  - Nama dan jenis hewan
+  - Ciri-ciri fisik
+  - Lokasi terakhir terlihat
+  - Foto
+  - Informasi kontak
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- **Laporan Hewan Ditemukan**: Penemu dapat melaporkan hewan yang mereka temukan dengan:
+  - Identifikasi jenis hewan
+  - Lokasi penemuan
+  - Deskripsi fisik
+  - Foto
+  - Detail kontak perawat sementara
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+- **Integrasi Peta Interaktif**: Penandaan lokasi yang tepat untuk hewan hilang dan ditemukan
+- **Profil Pengguna**: Kelola laporan dan informasi kontak Anda
+- **Desain Responsif**: Berfungsi dengan baik di desktop maupun perangkat mobile
 
-## Important Change with index.php
+## 📸 Tampilan Aplikasi
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+### Halaman Utama
+![Halaman Utama](https://raw.githubusercontent.com/KleiKleiKlei/cariHewan/main/screenshots/home.png)
+*Interface utama dengan opsi pelaporan hewan hilang dan ditemukan*
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+### Form Laporan Hewan Hilang
+![Form Hewan Hilang](https://raw.githubusercontent.com/KleiKleiKlei/cariHewan/main/screenshots/lost-pet-form.png)
+*Form untuk melaporkan hewan yang hilang*
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### Form Laporan Hewan Ditemukan
+![Form Hewan Ditemukan](https://raw.githubusercontent.com/KleiKleiKlei/cariHewan/main/screenshots/found-pet-form.png)
+*Form untuk melaporkan hewan yang ditemukan*
 
-## Repository Management
+### Daftar Hewan
+![Daftar Hewan](https://raw.githubusercontent.com/KleiKleiKlei/cariHewan/main/screenshots/pet-listings.png)
+*Daftar hewan yang dilaporkan hilang dan ditemukan*
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## 🛠 Persyaratan Teknis
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- PHP 7.4 atau lebih tinggi
+- MySQL 5.7 atau lebih tinggi
+- Web server Apache/Nginx
+- CodeIgniter 4.x
+- Composer
 
-## Contributing
+## 💻 Cara Instalasi
 
-We welcome contributions from the community.
+1. Clone repository:
+```bash
+git clone https://github.com/KleiKleiKlei/cariHewan.git
+```
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+2. Install dependencies:
+```bash
+composer install
+```
 
-## Server Requirements
+3. Buat database dan konfigurasi `.env`:
+```bash
+cp env .env
+# Edit pengaturan database di file .env
+```
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+4. Jalankan migrasi:
+```bash
+php spark migrate
+```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+5. Mulai server development:
+```bash
+php spark serve
+```
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## 💾 Database Setup
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-=======
-# cariHewan
-Pet finding application built with CodeIgniter 4
->>>>>>> 9d393dfb32e9ba42201bd7899b76edcc7dcf5c88
+### Menggunakan phpMyAdmin
+1. Buka phpMyAdmin (http://localhost/phpmyadmin)
+2. Buat database baru bernama `petdb`
+3. Pilih database `petdb`
+4. Klik tab "Import"
+5. Klik "Choose File" dan pilih file `petdb.sql` dari folder proyek
+6. Klik "Go" untuk mengimpor struktur dan data
+
+### Menggunakan Command Line
+```bash
+# Login ke MySQL
+mysql -u root -p
+
+# Buat database
+CREATE DATABASE petdb;
+
+# Import struktur dan data
+mysql -u root -p petdb < petdb.sql
+```
+
+### Struktur Database
+Database terdiri dari beberapa tabel utama:
+- `users`: Menyimpan data pengguna
+- `hewan`: Informasi detail hewan
+- `laporan`: Data laporan hewan hilang/ditemukan
+- `admins`: Data administrator sistem
+
+### Konfigurasi Database
+1. Copy file `env` menjadi `.env`
+2. Edit pengaturan database di `.env`:
+```env
+database.default.hostname = localhost
+database.default.database = petdb
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
+database.default.port = 3306
+```
+
+### Data Default
+Database sudah termasuk beberapa data contoh:
+- 2 akun pengguna
+- 2 data hewan
+- 2 laporan (hilang dan ditemukan)
+
+## 🤝 Kontribusi
+
+Kontribusi sangat diterima! Silakan kirim Pull Request.
+
+## 📝 Lisensi
+
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detail.
+
+## 👥 Pengembang
+
+- [@KleiKleiKlei](https://github.com/KleiKleiKlei)
+
+## 🙏 Ucapan Terima Kasih
+
+- Dibangun dengan CodeIgniter 4
+- Dirancang untuk membantu mempertemukan kembali hewan peliharaan dengan keluarganya
+- Terinspirasi oleh cinta terhadap hewan dan dukungan komunitas
