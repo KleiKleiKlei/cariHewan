@@ -1,0 +1,158 @@
+/* Styling Header */
+header nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling Homepage */
+.homepage {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.foto-hewan img {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cari-hewan {
+    text-align: center;
+}
+
+/* Styling Tombol */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling Gambar Profil */
+header nav img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Styling Judul dan Paragraf */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk Container Auth */
+.auth-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-container .form-group {
+    margin-bottom: 15px;
+}
+
+.auth-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.auth-container .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c; /* Warna hijau mirip di gambar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-container .btn-primary:hover {
+    background-color: #4cae4c;
+}
+
+.auth-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-container .alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+}

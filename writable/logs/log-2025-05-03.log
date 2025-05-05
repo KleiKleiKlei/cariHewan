@@ -1,0 +1,90 @@
+CRITICAL - 2025-05-03 06:31:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "map_test.php"
+[Method: GET, Route: map-test]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('map_test.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('map_test', [], true)
+ 3 APPPATH\Controllers\MapTest.php(9): view('map_test')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MapTest->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MapTest))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-03 06:56:20 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\LaporanModel::getFilteredLaporan
+[Method: GET, Route: daftar_hewan/hilang]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\DaftarHewan.php(19): CodeIgniter\Model->__call('getFilteredLaporan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-03 06:56:24 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\LaporanModel::getFilteredLaporan
+[Method: GET, Route: daftar_hewan/hilang]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\DaftarHewan.php(19): CodeIgniter\Model->__call('getFilteredLaporan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-03 06:59:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: daftar_hewan/hilang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daftar_hewan/hilang', [], true)
+ 4 APPPATH\Controllers\DaftarHewan.php(20): view('daftar_hewan/hilang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-03 06:59:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: daftar_hewan/hilang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daftar_hewan/hilang', [], true)
+ 4 APPPATH\Controllers\DaftarHewan.php(20): view('daftar_hewan/hilang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-03 07:22:06 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: GET, Route: laporan/lost]
+in APPPATH\Views\laporan\lost.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-03 10:12:13 --> ErrorException: Undefined array key "status_admin"
+[Method: GET, Route: daftar_hewan/hilang]
+in APPPATH\Views\daftar_hewan\hilang.php on line 86.
+ 1 APPPATH\Views\daftar_hewan\hilang.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_admin"', 'C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daftar_hewan/hilang', [], true)
+ 5 APPPATH\Controllers\DaftarHewan.php(58): view('daftar_hewan/hilang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-03 10:14:03 --> ErrorException: Undefined array key "status_admin"
+[Method: GET, Route: daftar_hewan/hilang]
+in APPPATH\Views\daftar_hewan\hilang.php on line 86.
+ 1 APPPATH\Views\daftar_hewan\hilang.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_admin"', 'C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daftar_hewan/hilang', [], true)
+ 5 APPPATH\Controllers\DaftarHewan.php(58): view('daftar_hewan/hilang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

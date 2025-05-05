@@ -1,0 +1,172 @@
+.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title ?? 'Lost and Found Hewan' ?></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Updated Custom CSS */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #FFE5E5, #FFF0F5) !important;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: 600;
+            color: #FF69B4 !important;
+        }
+
+        .navbar-brand i {
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #FFB6C1;
+            color: white !important;
+        }
+
+        .dropdown-menu {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+
+        .dropdown-item {
+            border-radius: 10px;
+            padding: 8px 20px;
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: #FFE4E1;
+            transform: translateX(5px);
+        }
+
+        .user-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid #FF69B4;
+            padding: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .user-icon:hover {
+            transform: scale(1.1);
+            border-color: #FF1493;
+        }
+
+        .help-icon {
+            background: #FF69B4;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .help-icon:hover {
+            background: #FF1493;
+            transform: rotate(15deg);
+        }
+
+        /* ...existing styles... */
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="<?= base_url('') ?>">
+            <i class="fas fa-paw"></i>PetFinder
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-center">
+                
+                <?php if (!session()->get('user_id')) : ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('login') ?>">
+                            <i class="fas fa-sign-in-alt mr-1"></i>Masuk
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('register') ?>">
+                            <i class="fas fa-user-plus mr-1"></i>Daftar
+                        </a>
+                    </li>
+                <?php endif; ?>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="lostFoundDropdown" data-toggle="dropdown">
+                        <i class="fas fa-search mr-1"></i>Lost and Found
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="<?= base_url(session()->get('user_id') ? 'daftar_hewan/hilang' : 'login') ?>">
+                            <i class="fas fa-heart-broken mr-2"></i>Hewan Dicari
+                        </a>
+                        <a class="dropdown-item" href="<?= base_url(session()->get('user_id') ? 'daftar_hewan/mencariPemilik' : 'login') ?>">
+                            <i class="fas fa-home mr-2"></i>Mencari Pemilik
+                        </a>
+                        <a class="dropdown-item" href="<?= base_url(session()->get('user_id') ? 'daftar_hewan/ditemukan' : 'login') ?>">
+                            <i class="fas fa-check-circle mr-2"></i>Sudah Ditemukan
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="laporanDropdown" data-toggle="dropdown">
+                        <i class="fas fa-file-alt mr-1"></i>Laporan
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="<?= base_url(session()->get('user_id') ? 'laporan/buat' : 'login') ?>">
+                            <i class="fas fa-plus-circle mr-2"></i>Buat Laporan
+                        </a>
+                        <a class="dropdown-item" href="<?= base_url(session()->get('user_id') ? 'laporan' : 'login') ?>">
+                            <i class="fas fa-history mr-2"></i>Riwayat Laporan
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url(session()->get('user_id') ? 'profil' : 'login') ?>">
+                        <img src="<?= base_url('images/user_icon.png') ?>" alt="Profil" class="user-icon">
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link help-icon" href="<?= base_url('help') ?>">?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+</body>
+</html>

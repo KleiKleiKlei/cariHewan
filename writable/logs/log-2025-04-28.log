@@ -1,0 +1,62 @@
+CRITICAL - 2025-04-28 14:37:31 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: daftar_hewan/hilang]
+in APPPATH\Views\daftar_hewan\hilang.php on line 12.
+ 1 APPPATH\Views\daftar_hewan\hilang.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daftar_hewan/hilang', [], true)
+ 5 APPPATH\Controllers\DaftarHewan.php(47): view('daftar_hewan/hilang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 14:39:19 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: daftar_hewan/hilang]
+in APPPATH\Views\daftar_hewan\hilang.php on line 12.
+ 1 APPPATH\Views\daftar_hewan\hilang.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daftar_hewan/hilang', [], true)
+ 5 APPPATH\Controllers\DaftarHewan.php(54): view('daftar_hewan/hilang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 14:39:24 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: daftar_hewan/hilang]
+in APPPATH\Views\daftar_hewan\hilang.php on line 12.
+ 1 APPPATH\Views\daftar_hewan\hilang.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\codeigniter4\\app\\Views\\daftar_hewan\\hilang.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daftar_hewan/hilang', [], true)
+ 5 APPPATH\Controllers\DaftarHewan.php(54): view('daftar_hewan/hilang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 14:43:25 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\LaporanModel::getFilteredLaporan
+[Method: GET, Route: daftar_hewan/hilang]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\DaftarHewan.php(19): CodeIgniter\Model->__call('getFilteredLaporan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 14:43:30 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\LaporanModel::getFilteredLaporan
+[Method: GET, Route: daftar_hewan/hilang]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\DaftarHewan.php(19): CodeIgniter\Model->__call('getFilteredLaporan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DaftarHewan->hilang()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DaftarHewan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
