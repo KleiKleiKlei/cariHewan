@@ -1,29 +1,7 @@
-# Environment file
 .env
-.env.development
-.env.production
-
-# Writable directory contents
 writable/cache/*
 writable/logs/*
 writable/session/*
 writable/uploads/*
 writable/debugbar/*
-!writable/cache/index.html
-!writable/logs/index.html
-!writable/session/index.html
-!writable/uploads/index.html
-
-# Vendor directory (if using Composer)
 vendor/
-composer.lock
-
-# IDE files
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-
-# System files
-.DS_Store
-Thumbs.db
