@@ -40,6 +40,36 @@ CariHewan adalah aplikasi web yang dibangun dengan CodeIgniter 4 untuk membantu 
 ![Daftar Hewan](https://raw.githubusercontent.com/KleiKleiKlei/cariHewan/main/screenshots/pet-listings.png)
 *Daftar hewan yang dilaporkan hilang dan ditemukan*
 
+
+## 👑 Fitur Admin
+
+### Dashboard Admin
+Admin memiliki akses ke dashboard khusus dengan fitur:
+- Statistik real-time
+- Manajemen laporan hewan
+- Manajemen pengguna
+- Riwayat aktivitas
+
+### Cara Akses Admin
+1. Buka halaman admin di:
+   ||`http://localhost/codeigniter4/supersecret`||
+2. Gunakan kredensial berikut:
+   ```
+   Username: ||tf2pyro||
+   Password: ||firefirefire123||
+   ```
+   > ⚠️ Jangan bagikan kredensial ini ke publik!
+
+### Fitur Dashboard
+- Approval/Reject laporan hewan
+- Statistik real-time:
+  - Total pengguna
+  - Laporan pending
+  - Laporan disetujui
+- Manajemen data
+- Notifikasi sistem
+
+
 ## 🛠 Persyaratan Teknis
 
 - PHP 7.4 atau lebih tinggi
