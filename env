@@ -1,0 +1,7 @@
+CI_ENVIRONMENT = development
+app.baseURL = 'http://localhost:8080'
+
+database.default.hostname = localhost
+database.default.database = petdb
+database.default.username = your_username
+database.default.password = your_password
