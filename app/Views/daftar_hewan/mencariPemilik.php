@@ -245,6 +245,10 @@
                                         <p><strong>Ciri Khas:</strong> Memiliki pita merah di leher</p>
                                         <p><strong>Lokasi Ditemukan:</strong> Taman Flora, Surabaya</p>
                                         <p><strong>Kontak Penemu:</strong> 081234567890</p>
+                                        <p><strong>Deskripsi Lengkap:</strong></p>
+                                        <div class="description-box p-3 bg-light rounded">
+                                            Kucing ini ditemukan sedang bermain di sekitar Taman Flora. Sangat jinak dan terawat, kemungkinan memiliki pemilik. Menggunakan pita merah di leher dan sangat suka bermain dengan tali. Mohon hubungi jika ini adalah kucing anda.
+                                        </div>
                                         <div class="mt-3">
                                             <button class="btn btn-primary ok-btn" data-dismiss="modal">
                                                 <i class="fas fa-paw mr-2"></i> OK
