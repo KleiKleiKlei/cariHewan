@@ -1,7 +1,22 @@
+#--------------------------------------------------------------------
+# ENVIRONMENT
+#--------------------------------------------------------------------
 CI_ENVIRONMENT = development
-app.baseURL = 'http://localhost:8080'
 
+#--------------------------------------------------------------------
+# APP
+#--------------------------------------------------------------------
+app.baseURL = 'http://localhost/codeigniter4/'
+app.forceGlobalSecureRequests = false
+app.CSPEnabled = false
+app.debug = true
+
+#--------------------------------------------------------------------
+# DATABASE
+#--------------------------------------------------------------------
 database.default.hostname = localhost
-database.default.database = petdb
+database.default.database = your_database
 database.default.username = your_username
 database.default.password = your_password
+database.default.DBDriver = MySQLi
+database.default.port = 3306
