@@ -1,4 +1,5 @@
 #--------------------------------------------------------------------
+<<<<<<< HEAD
 # Example Environment Configuration file
 #
 # This file can be used as a starting point for your own
@@ -14,12 +15,19 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
+=======
+# ENVIRONMENT
+#--------------------------------------------------------------------
+>>>>>>> 9d393dfb32e9ba42201bd7899b76edcc7dcf5c88
 CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d393dfb32e9ba42201bd7899b76edcc7dcf5c88
 app.baseURL = 'http://localhost/codeigniter4/'
 app.forceGlobalSecureRequests = false
 app.CSPEnabled = false
@@ -28,6 +36,7 @@ app.debug = true
 #--------------------------------------------------------------------
 # DATABASE
 #--------------------------------------------------------------------
+<<<<<<< HEAD
 
 database.default.hostname = localhost
 database.default.database = petdb
@@ -58,3 +67,11 @@ security.headerName = 'X-CSRF-TOKEN'
 security.cookieName = 'csrf_cookie_name'
 security.expire = 7200
 security.regenerate = true
+=======
+database.default.hostname = localhost
+database.default.database = your_database
+database.default.username = your_username
+database.default.password = your_password
+database.default.DBDriver = MySQLi
+database.default.port = 3306
+>>>>>>> 9d393dfb32e9ba42201bd7899b76edcc7dcf5c88
