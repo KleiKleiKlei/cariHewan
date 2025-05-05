@@ -36,7 +36,8 @@ class DaftarHewan extends Controller
                     'tanggal_laporan' => '2025-05-03',
                     'nomor_telepon' => '081234567890',
                     'status_admin' => 'yes',
-                    'tipe_laporan' => 'Hilang'
+                    'tipe_laporan' => 'Hilang',
+                    'deskripsi_laporan' => 'Anjing ini hilang saat diajak jalan-jalan di sekitar Taman Bungkul. Menggunakan kalung berwarna biru dan sangat ramah dengan orang. Mohon hubungi jika menemukan.'
                 ]
             ];
         }
